@@ -1,131 +1,317 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Kanida Auiphomma</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanida Auuipphomomma - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header id="navbar">
-        <div class="logo">MyPortfolio</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">หน้าแรก</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#projects">ผลงาน</a></li>
-                <li><a href="#contact">ติดต่อ</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="hero">
-        <div class="profile">
-        <h1>กนิดา อุ้ยพรมมา</h1>
-        <br>
-        <img src="./picture/profile.jpg" alt="profile">
-        <br>
-        <a href="#projects" class="btn">ดูผลงานของฉัน</a>
-        <br>
+  <div class="cursor"></div>
+
+  <header>
+    <nav>
+       <div class="logo-container">
+            <img src="./picture/" 
+                alt="Kanida Profile" 
+                class="profile-img">
+            <span class="logo-text">KANIDA</span>
         </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
 
-        <div class="hero-text">
-            <h1>About me</h1>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>KANIDA AUIPHOMMA</h1>
+      <div class="typing" id="typing-text"></div>
+      <div>
+        <a href="https://github.com/Kanida-66" target="_blank" class="btn">GitHub</a>
+        <a href="mailto:sb6640248101@lru.ac.th" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <div class="content" style="max-width:800px; margin:0 auto; text-align:center; font-size:1.2rem;">
+      <p>นักศึกษาสาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยราชภัฏเลย</p>
+      <p>มีความสนใจและพื้นฐานด้านการพัฒนาเว็บแอปพลิเคชันทั้ง Front-end และ Back-end</p>
+      <p>ต้องการโอกาสฝึกงานในตำแหน่ง Full Stack Developer เพื่อพัฒนาทักษะและเรียนรู้กระบวนการพัฒนาระบบในองค์กรจริง</p>
+    </div>
+  </section>
+
+  <section id="skills" style="background:#0a0a0a;">
+    <h3>Technical Skills</h3>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h4>Front-End</h4>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>React.js</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h4>Back-End & Database</h4>
+        <ul>
+          <li>Node.js</li>
+          <li>MySQL</li>
+          <li>RESTful API Design</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h4>Tools</h4>
+        <ul>
+          <li>VS Code</li>
+          <li>GitHub</li>
+          <li>Microsoft Office</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h4>Additional</h4>
+        <ul>
+          <li>AI Tools (ChatGPT, Gemini)</li>
+          <li>ภาษาอังกฤษพื้นฐาน</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+  <h3>Education</h3>
+  <div class="education-card">
+    <div class="edu-header">
+      <div class="edu-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="edu-title">
+        <h4>สาขาวิทยาการคอมพิวเตอร์</h4>
+        <p class="uni">คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยราชภัฏเลย</p>
+      </div>
+    </div>
+
+    <div class="edu-details">
+      <div class="info-item">
+        <span class="label">คาดว่าจะสำเร็จการศึกษา</span>
+        <span class="value">ปีการศึกษา 2569</span>
+      </div>
+      
+      <div class="info-item gpa">
+        <span class="label">เกรดเฉลี่ยสะสม (GPA)</span>
+        <div class="gpa-container">
+          <div class="gpa-bar">
+            <div class="gpa-fill" style="width: calc(3.57 / 4.00 * 100%);"></div>
+          </div>
+          <span class="gpa-value">3.57 / 4.00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-footer">
+      <p>กำลังศึกษาอยู่ • มุ่งเน้นการพัฒนา Full Stack Web Application</p>
+    </div>
+  </div>
+</section>
+
+  <section id="project" style="background:#0a0a0a;">
+    <h3>Academic Projects</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="carousel">
+          <div class="carousel-inner">
+            <img src="./picture/mealplan1.jpg" alt="Meal Plan System Screenshot 1">
+            <img src="./picture/mealplan2.jpg" alt="Meal Plan System Screenshot 2">
+            <img src="./picture/mealplan3.jpg" alt="Meal Plan System Screenshot 3">
+          </div>
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+        <div class="project-content">
+          <h3>ระบบสนับสนุนการวางแผนมื้ออาหารประจำวัน</h3>
+          <p>โปรเจกต์พัฒนาเว็บแอปพลิเคชันสำหรับวางแผนมื้ออาหารประจำวัน ช่วยให้ผู้ใช้จัดการโภชนาการได้อย่างง่ายดาย</p>
+          <p><strong>เทคโนโลยี:</strong> Front-end: React.js, Back-end: Node.js + RESTful API, Database: MySQL</p>
+          <a href="https://github.com/Kanida-66/meal-plan-system" target="_blank" class="btn-project">ดูบน GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="carousel">
+          <div class="carousel-inner">
+            <img src="./picture/scoreboard.png" alt="Score Board Screenshot 1">
+            <img src="./picture/scoreboard2.png" alt="Score Board Screenshot 2">
+          </div>
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
+        </div>
+        <div class="project-content">
+          <h3>Score Board System</h3>
             <br>
-            <p>นักศึกษาสาขาวิทยาการคอมพิวเตอร์</p>
-            <p>คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยราชภัฏเลย</p>
-            <p>มีพื้นฐานด้านการพัฒนาเว็บแอปพลิเคชันทั้ง Front-end และ Back-end</p>
-            <p>เพื่อพัฒนาทักษะการทำงานจริง และเรียนรู้กระบวนการพัฒนาระบบในองค์กร</p>
-            <p>คาดว่าจะจบการศึกษา ปีการศึกษา 2569</p>
-            <p>ต้องการฝึกงานในตำแหน่ง Full Stack Developer</p>
-            
+          <p>เว็บไซต์แสดงผลคะแนนการแข่งขันแบบเรียลไทม์ เหมาะสำหรับกิจกรรมกีฬาหรือเกม</p>
+          <p><strong>เทคโนโลยี:</strong> HTML, CSS, JavaScript</p>
+          <a href="https://github.com/Kanida-66/score-bord-2566" target="_blank" class="btn-project">ดูบน GitHub</a>
+          <a href="https://kanida-66.github.io/score-bord-2566/" target="_blank" class="btn-project">ดูบน เว็บไซต์</a>
         </div>
-    </section>
+      </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="skills" class="section1">
+  <section id="contact">
+    <h3>Contact</h3>
+    <div style="text-align:center; font-size:1.2rem;">
+      <p><i class="fas fa-map-marker-alt"></i> 225 หมู่ 3 บ้านโพนสว่าง ตำบลนาดอกคำ อำเภอนาด้วง จังหวัดเลย, Thailand</p>
+      <p><i class="fas fa-phone"></i> 098-679-6710</p>
+      <p><i class="fas fa-envelope"></i> sb6640248101@lru.ac.th</p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/Kanida-66" target="_blank">github.com/Kanida-66</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kanida-auiphomma-7103343b7" target="_blank">linkedin.com/in/kanida-auuipphomomma</a></p>
+    </div>
+    <div class="icons">
+      <a href="https://github.com/Kanida-66" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:sb6640248101@lru.ac.th"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
 
-        <h2 class="section-title">TECHNICAL SKILLS</h2>
-        <br>
-        <div  class="skills-grid">
-            <div>
-                <h3>Front-End</h3>
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>JavaScript</p>
-                <p>Bootstrap</p>
-                <p>React.js</p>
-            </div>
-            <div>
-                <h3>Back-End</h3>
-                <p>Node.js</p>
-            </div>
-            <div>
-                <h3>Database</h3>
-                <p>MySQL</p>
-            </div>
-            <div>
-                <h3>Tools</h3>
-                <p>VS Code</p>
-                <p>GitHub</p>
-            </div>
-        </div>
-       
-    </section>
-    <section id="skills" class="section2">
+  <footer>
+    <p>© 2026 Kanida Auuipphomomma. Built with passion.</p>
+  </footer>
 
-        <h2 class="section-title">ADDITIONAL SKILLS</h2>
-        <br>
-        <div  class="skills2-grid">
-            <div>
-                <h3>การใช้ AI</h3>
-                <p>ใช้เครื่องมือ AI ช่วยพัฒนาโค้ด 
-                    เช่น Chat GPT, Gemini</p>
-            </div>
-            <div>
-                <h3>Microsoft Office</h3>
-                <p>Word</p>
-                <p>Excel</p>
-                <p>PowerPoint</p>
-            </div>
-            <div>
-                <h3>ภาษา</h3>
-                <p>ภาษาอังกฤษ : พื้นฐาน</p>
-            </div>
-        </div>
-       
-    </section>
+  <script>
+    // Custom Cursor
+    const cursor = document.querySelector('.cursor');
 
-    <section id="projects" class="section bg-light">
-        <h2>ผลงานของฉัน</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                 <a href="https://kanida-66.github.io/score-bord-2566/" target="_blank" class="project-card">
-                    <h3>Score Board System</h3>
-                    <p>เว็บไซต์แสดงผลคะแนนการแข่งขัน พัฒนาด้วย HTML CSS และ JavaScript</p>
-                </a>
-            </div>
-            <div class="project-card">
-                <h3>โปรเจกต์ที่ 2</h3>
-                <p>ตัวอย่างผลงานเว็บไซต์ หรือแอปพลิเคชันที่คุณเคยทำ</p>
-            </div>
-            <div class="project-card">
-                <h3>โปรเจกต์ที่ 3</h3>
-                <p>โปรเจกต์ในมหาวิทยาลัย หรือโปรเจกต์ส่วนตัวที่คุณภูมิใจ</p>
-            </div>
-        </div>
-    </section>
+    document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    });
 
-    <section id="contact" class="section">
-        <h2>ติดต่อฉัน</h2>
-        <p>อีเมล: sb6640248101@lru.ac.th</p>
-        <p>GitHub: github.com/Kanida-66</p>
-        <p>LinkedIn: linkedin.com/in/kanida-auiphomma-7103343b7</p>
-    </section>
+    // Hover effect ด้วย JS (แก้ปัญหา ~ selector)
+    const hoverables = document.querySelectorAll('a, button, .skill-card, .btn, .education-card');
+    hoverables.forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
 
-    <footer>
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
-    </footer>
+    // Mobile menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
 
-    <script src="script.js"></script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // สำหรับ skill cards ลูก ๆ
+          if (entry.target.classList.contains('skills-container')) {
+            document.querySelectorAll('.skill-card').forEach((card, i) => {
+              setTimeout(() => card.classList.add('visible'), i * 150);
+            });
+          }
+          // สำหรับ education card
+          if (entry.target.id === 'education') {
+            document.querySelector('.education-card').classList.add('visible');
+          }
+          // สำหรับ project cards
+          if (entry.target.id === 'project') {
+            document.querySelectorAll('.project-card').forEach((card, i) => {
+              setTimeout(() => card.classList.add('visible'), i * 200);
+            });
+          }
+          if (entry.target.classList.contains('skills-container')) {
+            document.querySelectorAll('.skill-card').forEach((card, i) => {
+                setTimeout(() => card.classList.add('visible'), i * 150);
+            });
+            }
+        }
+      });
+    }, { threshold: 0.05 });  // ลดจาก 0.15 เป็น 0.05 เพื่อให้ตรวจพบเร็วขึ้น
+
+    document.querySelectorAll('section, .hero-content, .skills-container, .timeline').forEach(el => {
+      observer.observe(el);
+    });
+    // GPA animation
+    const gpaFill = document.querySelector('.gpa-fill');
+    if (gpaFill) {
+    const eduObserver = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+        gpaFill.style.width = '89.25%'; // 3.57 / 4 ≈ 89.25%
+        }
+    }, { threshold: 0.8 });
+
+    eduObserver.observe(document.querySelector('#education'));
+    }
+
+    // Typing Effect
+    const typingElement = document.getElementById('typing-text');
+    const words = ["Full Stack Developer", "Web Enthusiast", "React & Node Lover", "Future Intern Ready"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentWord = words[wordIndex];
+      typingElement.innerHTML = currentWord.substring(0, charIndex) + '<span class="cursor-blink"></span>';
+
+      if (!isDeleting && charIndex < currentWord.length) {
+        charIndex++;
+        setTimeout(type, 100);
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(type, 60);
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+        setTimeout(type, isDeleting ? 50 : 1200);
+      }
+    }
+
+    type();
+    <!-- Carousel สำหรับ project cards -->
+    document.querySelectorAll('.carousel').forEach(carousel => {
+        const inner = carousel.querySelector('.carousel-inner');
+        const prev = carousel.querySelector('.prev');
+        const next = carousel.querySelector('.next');
+        const images = inner.querySelectorAll('img');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+        inner.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        next.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+        });
+
+        prev.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+        });
+    });
+  </script>
+  
 </body>
 </html>
